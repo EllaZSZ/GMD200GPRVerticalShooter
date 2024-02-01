@@ -16,10 +16,9 @@ public class Enemy1Controller : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("entreed");
-        other.gameObject.SetActive(false);
+        Destroy(other.gameObject);
         Destroy(gameObject);
     }
 }

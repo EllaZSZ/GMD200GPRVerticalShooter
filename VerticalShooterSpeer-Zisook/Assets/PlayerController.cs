@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
             {
                 Rigidbody2D bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
                 bullet.velocity = transform.up * bulletSpeed;
-                Destroy(bullet.gameObject, 2.0f);
+                Destroy(bullet.gameObject, 1.0f);
                 bulletDelay = 0;
             }
         }
