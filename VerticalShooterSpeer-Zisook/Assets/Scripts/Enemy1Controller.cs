@@ -93,14 +93,14 @@ public class Enemy1Controller : MonoBehaviour
                     PlayerController.health += 0.5f;
                 }
                 transform.parent.parent.GetComponent<AudioSource>().Play();
-                Rigidbody2D shrap1 = Instantiate(shrapnelPrefab, transform.position, transform.rotation);
-                Rigidbody2D shrap2 = Instantiate(shrapnelPrefab, transform.position, Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z + 90));
-                Rigidbody2D shrap3 = Instantiate(shrapnelPrefab, transform.position, Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z + 180));
-                Rigidbody2D shrap4 = Instantiate(shrapnelPrefab, transform.position, Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z - 90));
-                shrap1.velocity = transform.up * bulletSpeed / 2;
-                shrap2.velocity = -transform.right * bulletSpeed / 2;
-                shrap3.velocity = -transform.up * bulletSpeed / 2;
-                shrap4.velocity = transform.right * bulletSpeed / 2;
+                Rigidbody2D shrap1 = Instantiate(shrapnelPrefab, transform.position, Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z + 45));
+                Rigidbody2D shrap2 = Instantiate(shrapnelPrefab, transform.position, Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z - 45));
+                Rigidbody2D shrap3 = Instantiate(shrapnelPrefab, transform.position, Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z + 135));
+                Rigidbody2D shrap4 = Instantiate(shrapnelPrefab, transform.position, Quaternion.Euler(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z - 135));
+                shrap1.velocity = shrap1.transform.up * bulletSpeed / 2;
+                shrap2.velocity = shrap2.transform.up * bulletSpeed / 2;
+                shrap3.velocity = shrap3.transform.up * bulletSpeed / 2;
+                shrap4.velocity = shrap4.transform.up * bulletSpeed / 2;
                 Destroy(shrap1.gameObject, 0.2f);
                 Destroy(shrap2.gameObject, 0.2f);
                 Destroy(shrap3.gameObject, 0.2f);
