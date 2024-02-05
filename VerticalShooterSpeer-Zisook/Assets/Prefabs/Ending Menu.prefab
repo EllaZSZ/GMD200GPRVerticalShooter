@@ -92,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6840703811421835775}
+  - component: {fileID: 6568853719063439270}
   m_Layer: 0
   m_Name: Ending Menu
   m_TagString: Untagged
@@ -116,6 +117,19 @@ Transform:
   - {fileID: 987311053599925767}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6568853719063439270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2205553222677622225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e68254fb97a7547b9629dc79b90176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Game: {fileID: 712563352194567235, guid: 5a88ee272d80f834cb320df7d604ca63, type: 3}
 --- !u!1 &3092444719649226335
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,7 +141,6 @@ GameObject:
   - component: {fileID: 987311053599925767}
   - component: {fileID: 7397088888838028330}
   - component: {fileID: 4008089461690454795}
-  - component: {fileID: 7718640518860272461}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -216,16 +229,3 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4281657343
---- !u!114 &7718640518860272461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3092444719649226335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26e68254fb97a7547b9629dc79b90176, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Game: {fileID: 712563352194567235, guid: 5a88ee272d80f834cb320df7d604ca63, type: 3}
