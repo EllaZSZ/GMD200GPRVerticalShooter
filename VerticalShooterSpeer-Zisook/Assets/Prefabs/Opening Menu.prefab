@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2234198267115994639}
   - component: {fileID: 2365850932323760978}
   - component: {fileID: 5188460321374101413}
-  - component: {fileID: 1902128313170232748}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -100,19 +99,6 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4278249471
---- !u!114 &1902128313170232748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1105441614040336690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26e68254fb97a7547b9629dc79b90176, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Game: {fileID: 712563352194567235, guid: 5a88ee272d80f834cb320df7d604ca63, type: 3}
 --- !u!1 &4765235602313799348
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7729456021705744615}
+  - component: {fileID: 15647091635178919}
   m_Layer: 0
   m_Name: Opening Menu
   m_TagString: Untagged
@@ -229,3 +216,16 @@ Transform:
   - {fileID: 2234198267115994639}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &15647091635178919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7695399535670575120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e68254fb97a7547b9629dc79b90176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Game: {fileID: 712563352194567235, guid: 5a88ee272d80f834cb320df7d604ca63, type: 3}

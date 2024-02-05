@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float bulletSpeed;
     [SerializeField] private int BULLET_DELAY;
     [SerializeField] private GameObject healthBar;
-    [SerializeField] public static float health;
     [SerializeField] private GameObject endscreen;
+    public static float health = 1;
     private int bulletDelay;
     private Rigidbody2D player;
     // Start is called before the first frame update
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
             health -= 0.201f;
             if (health <= 0)
             {
-                Destroy(gameObject.transform.parent.parent);
+                Destroy(gameObject.transform.parent.parent.gameObject);
                 Instantiate(endscreen);
             }
         }

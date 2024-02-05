@@ -19,6 +19,7 @@ public class StartupController : MonoBehaviour
             Destroy(gameObject);
             Instantiate(Game);
             ScoreController.score = 0;
+            PlayerController.health = 1;
         }
     }
 }
